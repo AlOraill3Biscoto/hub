@@ -405,7 +405,7 @@ function view(v){
   clearTimeout(idle);if(v==="p"){drawP();idle=setTimeout(()=>view("d"),18e4)}
 }
 $("#bdash").onclick=()=>view("d");$("#bpro").onclick=()=>view("p");
-$("#popen").onclick=()=>window.open("https://0040023d.index-education.net/pronote/","_blank","noopener,noreferrer");
+$("#popen").onclick=()=>openApp("com.IndexEducation.Pronote","https://0040023d.index-education.net/pronote/");
 $("#pv").addEventListener("pointerdown",()=>{clearTimeout(idle);idle=setTimeout(()=>view("d"),18e4)});
 $("#wp").onclick=()=>{wk--;drawP()};$("#wn").onclick=()=>{wk++;drawP()};
 $("#pset").onclick=()=>{$("#pics").value=P.ics;$("#ppx").value=P.proxy;$("#pc").classList.add("show")};
